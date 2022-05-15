@@ -29,7 +29,7 @@ body {
 
 
 .bgimg {
-    background-image: url('images/cover_photo1.jpeg');
+    background-image: url('./images/cover_photo1.jpeg');
     background-size: cover;
     background-position: center;
     position: relative;
