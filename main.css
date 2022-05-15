@@ -7,6 +7,7 @@ body {
     padding: 0;
     margin: 0;
     background: #5cc6cc;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 .navbar {
     background:#30c8d4;
@@ -51,9 +52,10 @@ body {
   border: 1px solid black;
   height: 300px;
   width: 1000px;
-  overflow-x: scroll;
+  overflow: scroll;
   overflow-y: hidden;
-  white-space:nowrap
+  white-space:nowrap;
+  margin: 4.5em 0 0;
 }
 
 .description {
@@ -89,4 +91,48 @@ body {
 	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	margin-bottom: 16px;
+}
+
+.row {
+ overflow: scroll;
+ overflow-y: hidden;
+ width: 100%;
+}
+.row__inner {
+ transition: 450ms transform;
+ font-size: 0;
+ white-space: nowrap;
+ margin: 70.3125px 0;
+ padding-bottom: 10px;
+}
+.tile {
+ position: relative;
+ display: inline-block;
+ width: 212px;
+ height: auto;
+ margin-right: 10px;
+ font-size: 20px;
+ cursor: pointer;
+ transition: 450ms all;
+ transform-origin: center left;
+}
+.tile__img {
+ width: 212px;
+ height: auto;
+ -o-object-fit: cover;
+ object-fit: cover;
+}
+
+.row__inner:hover {
+ transform: translate3d(-62.5px, 0, 0);
+}
+.row__inner:hover .tile {
+ opacity: 0.3;
+}
+.row__inner:hover .tile:hover {
+ transform: scale(1.5);
+ opacity: 1;
+}
+.tile:hover~.tile {
+ transform: translate3d(125px, 0, 0);
 }
