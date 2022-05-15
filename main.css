@@ -42,6 +42,17 @@ body {
     position: relative;
 }
 
+
+.scroll{
+  background-color: lightblue;
+  border: 1px solid black;
+  height: 300px;
+  width: 1000px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space:nowrap
+}
+
 .description {
 	left: 27%;
 	position: absolute;
