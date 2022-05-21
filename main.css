@@ -3,12 +3,12 @@ html {
   scroll-padding-top: 55px;
 }
 
-body {
+/* body {
     padding: 0;
     margin: 0;
     background: #5cc6cc;
     font-family: Calibri;
-}
+} */
 .navbar {
     background:#30c8d4;
 }
@@ -31,15 +31,6 @@ body {
     justify-content: flex-end;
 }
 
-p
-{
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-}
-
-h1
-{
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-}
 
 h2
 {
@@ -57,17 +48,10 @@ h4
 }
 
 .bgimg {
-    background-image: url('./images/cover_photo1.jpeg');
+    /* background-image: url('./images/cover_photo1.jpeg'); */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.header {
-    background-image: url('images/cover_photo1.jpeg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -94,11 +78,13 @@ h4
 }
 .description h1 {
 	color: #000000;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 .description p {
 	color: #000000;
 	font-size: 1.3rem;
 	line-height: 1.5;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 
 .features {
@@ -120,46 +106,46 @@ h4
 	margin-bottom: 16px;
 }
 
-.row {
- overflow: scroll;
- overflow-y: hidden;
- width: 100%;
-}
-.row__inner {
- transition: 450ms transform;
- font-size: 0;
- white-space: nowrap;
- margin: 70.3125px 0;
- padding-bottom: 10px;
-}
-.tile {
- position: relative;
- display: inline-block;
- width: 212px;
- height: auto;
- margin-right: 10px;
- font-size: 20px;
- cursor: pointer;
- transition: 450ms all;
- transform-origin: center left;
-}
-.tile__img {
- width: 212px;
- height: auto;
- -o-object-fit: cover;
- object-fit: cover;
+.blue_grad1 {
+  background: linear-gradient(to bottom, #0066cc 0%, #66ccff 100%);
 }
 
-.row__inner:hover {
- transform: translate3d(-62.5px, 0, 0);
+.blue_to_pink_grad1 {
+  background: linear-gradient(to bottom, #66ccff 0%, #ff9999 100%);
 }
-.row__inner:hover .tile {
- opacity: 0.3;
+
+.pink_to_blue_grad1 {
+  background: linear-gradient(to bottom, #ff9999 0%, #66ccff 100%);
 }
-.row__inner:hover .tile:hover {
- transform: scale(1.5);
- opacity: 1;
+
+.blue_grad2 {
+  background: linear-gradient(to bottom, #66ccff 0%, #0066cc 100%);
 }
-.tile:hover~.tile {
- transform: translate3d(125px, 0, 0);
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 10s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
