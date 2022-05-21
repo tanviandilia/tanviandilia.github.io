@@ -48,13 +48,14 @@ h4
 }
 
 .bgimg {
-    /* background-image: url('./images/cover_photo1.jpeg'); */
+    background-image: url('./images/cover_bg1.jpeg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-position: center;
     position: relative;
+    /* padding-top: 20%; */
 }
 
 
