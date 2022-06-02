@@ -77,24 +77,24 @@ p
 }
 
 /* unvisited link */
-a:link {
+/*a:link {
   color: #3a3a3a;
-}
+}*/
 
 /* visited link */
-a:visited {
+/*a:visited {
   color: #3a3a3a;
-}
+}*/
 
 /* mouse over link */
-a:hover {
+/*a:hover {
   color: #fff;
-}
+}*/
 
 /* selected link */
-a:active {
+/*a:active {
   color: #fff;
-}
+}*/
 
 .bgimg {
     background-image: url('./images/cover_bg1.jpeg');
